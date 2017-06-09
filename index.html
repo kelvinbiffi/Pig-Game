@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+
+        <div class="modal">
+          <div class="language-panel">
+            <a id="pt">PT</a>
+            <a id="en">EN</a>
+          </div>
+
+          <div class="score-panel">
+            <span id="score-hit">Enter the score to be hit</span><br>
+            <input type="number" id="score-hit-value" value="100"><br>
+            <a id="score-hit-button">></a>
+          </div>
+
+          <div class="rules-panel">
+            <div class="en active">
+              <p>RULES</p><br>
+              <p>1. ROLL THE DICE to get points and press HOLD to save the score.</p>
+              <p>2. The first player to reach the set score wins!</p>
+              <p>3. Be careful because if in that round one of the dice falls 1 you pass the turn and lose the points of this round.</p>
+              <!-- <p>4. Be very careful because if in the same round fall twice 6 you lose all your points.</p> -->
+              <p>4. Good luck!</p>
+            </div>
+            <div class="pt">
+              <p>REGRAS</p><br>
+              <p>1. ROLE OS DADOS para obter pontução e aperte MANTER para salvar a pontuação.</p>
+              <p>2. O primeiro jogador a atingir a pontuação definida vence!</p>
+              <p>3. Tome cuidado, pois se nessa rodada um dos dados cair 1 você passa a jogada e perde os pontos desta rodada.</p>
+              <!-- <p>4. Tome muito cuidado pois se na mesma rodada cair duas vezes 6 você perde todos os seus pontos.</p> -->
+              <p>4. Boa sorte!</p>
+            </div>
+            <a id="start-game">START</a>
+          </div>
+
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

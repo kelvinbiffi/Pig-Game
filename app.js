@@ -56,6 +56,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
       scores[activeplayer] = 0;
       document.getElementById('score-' + activeplayer).textContent = 0;
       nextPlayer();
+      return;
     }else if(dice !== 1){
       roundScore += dice;
       document.querySelector('#current-' + activeplayer).textContent = roundScore;

@@ -194,6 +194,12 @@ body {
   }
 }
 
+@media(max-height: 520px){
+  .player-score {
+      margin-bottom: 0px;
+  }
+}
+
 
 .active { background-color: #f7f7f7; }
 .active .player-name { font-weight: 300; }
@@ -217,6 +223,12 @@ body {
 @media(max-width: 650px){
   .player-current-box {
     width: 60%;
+  }
+}
+
+@media(max-height: 520px){
+  .player-current-box {
+    width: 30%;
   }
 }
 
